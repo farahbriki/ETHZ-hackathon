@@ -49,11 +49,11 @@ from diffusers.utils.import_utils import is_xformers_available
 ####################################################################
 
 MODEL_NAME = "runwayml/stable-diffusion-v1-5"
-OUTPUT_DIR="lora/pokemon"
-DATASET_NAME="lambdalabs/pokemon-blip-captions"
-TRAIN_DATA_DIR=None # is this one or the dataset name
-WANDB_PROJECT_NAME="ethz-hackathon"
-WANDB_TEAM="fastai"
+OUTPUT_DIR="lora/zelda"
+DATASET_NAME="dataset/"
+TRAIN_DATA_DIR="dataset/" # is this one or the dataset name
+WANDB_PROJECT_NAME="ethz-hackathon-zelda"
+WANDB_TEAM="faril_rabbi_yostor"
 
 ####################################################################
 ## You should play with these params first
@@ -71,7 +71,7 @@ defaults = SimpleNamespace(
     learning_rate=1e-04,
     lr_scheduler="cosine",
     lr_warmup_steps=0,
-    validation_prompt="A pokemon with blue eyes.",
+    validation_prompt="Link playing football in category Enemies in game Breath_of_the_Wild",
     seed=1337,
 )
 
